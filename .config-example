@@ -1,0 +1,10 @@
+module.exports = {
+    production :{
+    },
+    development :{
+        SECRET_REFRESH_TOKEN:'tokensecret',
+        SECRET_TOKEN:'refreshtokensecret',
+        GOOGLE_ID:'yourgoogleid',
+        GOOGLE_SECRET:'yourgooglesecret'
+    }
+}
