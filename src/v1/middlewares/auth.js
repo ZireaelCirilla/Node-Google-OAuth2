@@ -78,7 +78,7 @@ passport.use(new GoogleTokenStrategy({
                 {
                     googleId: profile._json.id,
                     email: profile._json.email,
-                    name: profile._json.givenName,
+                    name: profile._json.given_name,
                     password: generator.generate(),
                     role: "ROLE_USER"
                 }, (err, user) => { return done(err, user) })
