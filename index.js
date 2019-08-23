@@ -16,7 +16,7 @@ app.use('/api/v1', routerv1)
 console.log(process.env);
 
 mongoose.connect(process.env.MONGODB_URI + "/dbej2").then(res => {
-    app.listen(8080);
+    app.listen(process.env.PORT || 5000);
     console.log(res);
 }).catch(err => {
     console.log(err);
