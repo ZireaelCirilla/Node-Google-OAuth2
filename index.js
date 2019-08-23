@@ -20,6 +20,6 @@ mongoose.connect(mongoUrl + "/dbej2").then(res => {
     app.listen(PORT, HOST);
     console.log(`Running on http://${HOST}:${PORT}`);
 }).catch(err => {
-
+    console.log(err);
 })
 
